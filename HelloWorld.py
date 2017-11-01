@@ -1,1 +1,5 @@
 print("Hello World!")
+print("123 + 2")
+print(123 + 2)
+print("123" + "5")
+print("Hello " + " " + " world")
