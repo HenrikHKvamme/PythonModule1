@@ -19,3 +19,13 @@ if (theYearIEntered-birthYear) < 0:
     exit(0)
 
 print("My age in", theYearIEntered, "Will be:", theYearIEntered - birthYear)
+
+
+
+#Tasks for homework
+# 1) What iff irs a new born baby? Greet him/her
+# 2) What if someone's age comes up as 100! congratulat him/her
+# 3) What if someone's age is between 13 and 19? Say hello to the teenager.
+# 4) If the person is 10, 20, 30... invite them to a new decade
+# 5) If the person's age is a prime number, tell them about it
+# 6) Add up the digits in their birth year
