@@ -21,3 +21,7 @@ while(tries < maxTries):
 
 if tries == 5:
     print("You lose! The number was:", myRandomNumber)
+
+
+#What if we enter numbers outside the range
+#make a way to continue playing the game
