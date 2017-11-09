@@ -24,6 +24,8 @@ if birthYear == currentYear:
 if (currentYear - birthYear) == 100:
     print("Congratulations on 100 years!!!")
 
+if  13 <= (currentYear - birthYear) <=19:
+    print("Greeting teenager!")
 
 print("Your age in", theYearIEntered, "Will be:", theYearIEntered - birthYear)
 
