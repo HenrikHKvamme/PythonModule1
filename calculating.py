@@ -1,5 +1,6 @@
 currentYear = int(input("What year are we in now? "))
 birthYear = int(input("Please enter the year in whitch you were born. "))
+decade = 10
 
 if birthYear > currentYear:
     print("You are not yet born.")
@@ -26,6 +27,13 @@ if (currentYear - birthYear) == 100:
 
 if  13 <= (currentYear - birthYear) <=19:
     print("Greeting teenager!")
+
+while decade <= (currentYear - birthYear):
+    if (currentYear - birthYear) == decade:
+        print("Welcome to a new decade!!")
+    decade = decade + 10
+
+
 
 print("Your age in", theYearIEntered, "Will be:", theYearIEntered - birthYear)
 
