@@ -1,6 +1,6 @@
 currentYear = int(input("What year are we in now? "))
 birthYear = int(input("Please enter the year in whitch you were born. "))
-decade = 10
+
 
 if birthYear > currentYear:
     print("You are not yet born.")
@@ -28,14 +28,27 @@ if (currentYear - birthYear) == 100:
 if  13 <= (currentYear - birthYear) <=19:
     print("Greeting teenager!")
 
+decade = 10
+
 while decade <= (currentYear - birthYear):
     if (currentYear - birthYear) == decade:
         print("Welcome to a new decade!!")
     decade = decade + 10
 
+age = (currentYear - birthYear)
+
+if age > 1:
+    for i in range(2,age):
+        if (age % i) == 0:
+            print("Your age is not a prime number.")
+            break
+    else:
+        print("Your age is a prime number!")
+
 
 
 print("Your age in", theYearIEntered, "Will be:", theYearIEntered - birthYear)
+
 
 
 #Tasks for homework
