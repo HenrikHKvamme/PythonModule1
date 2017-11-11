@@ -7,6 +7,9 @@ maxTries = 5
 
 numberGuessed = int(input("Guess a number: "))
 
+while numberGuessed < minNumber or numberGuessed > maximumNumber:
+    numberGuessed = int(input("That number is not in range. Try again:"))
+
 tries = 0
 
 while(tries < maxTries):
@@ -14,7 +17,9 @@ while(tries < maxTries):
         print("Incorrect, Try again! :")
         tries = tries + 1
         print("You have",5-tries,"remaining")
-        NumberGuessed = int(input("Guess again."))
+        numberGuessed = int(input("Guess again:"))
+        while numberGuessed < minNumber or numberGuessed > maximumNumber:
+            numberGuessed = int(input("That number is not in range. Try again:"))
     if numberGuessed == myRandomNumber:
         print("Correct!!! The number was", myRandomNumber)
         exit(0)
@@ -23,5 +28,5 @@ if tries == 5:
     print("You lose! The number was:", myRandomNumber)
 
 
-#What if we enter numbers outside the range
-#make a way to continue playing the game
+# 1) What if we enter numbers outside the range
+# 2) make a way to continue playing the game
