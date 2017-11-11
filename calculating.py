@@ -45,8 +45,13 @@ if age > 1:
     else:
         print("Your age is a prime number!")
 
+strAge = str(age)
+added = 0
 
+for ch in strAge:
+    added = added + int(ch)
 
+print("The numbers in your age added together is:",added)
 print("Your age in", theYearIEntered, "Will be:", theYearIEntered - birthYear)
 
 
