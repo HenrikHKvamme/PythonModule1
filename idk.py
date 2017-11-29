@@ -1,11 +1,9 @@
-randomYear = int(input("Give me a year."))
-yearIWasBorn = int(input("Please enter the year whitch you were born."))
+import temperature
 
-print("My name is Henrik.")
-print("My age in", randomYear, "will be", randomYear - yearIWasBorn)
 
-#Tests
-# 1) Entered a string - breaks
-# 2) Entered a decimal - Breaks
-# 3) Empty string - breaks
-# 4) a space - breaks
+whatTemp = int(input("Type 1 for Celcius to Fahrenheit, or 2 for Fahrenheit to Celcius: "))
+if whatTemp == 1:
+    temperature.celciusToFahrenheit()
+
+elif whatTemp == 2:
+    temperature.fahrenheitToCelcius()
